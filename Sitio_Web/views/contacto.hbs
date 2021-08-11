@@ -1,0 +1,32 @@
+<!-- formulario de ocntacto -->
+<section>
+    <div class="contacto">
+        <div class="title" id="contacto">
+            <br>
+            <h2>Envianos un mensaje</h2>
+        </div>
+
+        <div class="contactBody">
+
+            <form action="/contacto" method="post" class="form_contact">
+
+                <input type="text" class="name entry " name="nombre" placeholder="Tu nombre" required />
+
+                <input type="text" class="email entry" name="email" placeholder="Email" required />
+
+                <textarea class="message entry" name="mensaje" placeholder="mensaje" required></textarea>
+
+                <input type="submit" class="submit entry" value="Enviar" />
+            </form>
+            <div class="shadow"></div>
+        </div>
+    </div>
+
+    {{#if message }}
+
+    <p>{{message}}</p>
+
+    {{/if}}
+
+</section>
+<!-- fin formulario de contacto -->

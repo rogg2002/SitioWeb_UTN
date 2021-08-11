@@ -1,0 +1,398 @@
+
+/* font-family: 'Pinyon Script', cursive; */
+
+.container-xxl{background-color: rgb(230, 176, 208);
+    width: 100%;
+}
+
+/* estilos header */
+
+
+
+h1{
+    font-family: 'Pinyon Script', cursive;
+    font-size: 4.5em;
+    font-weight: bolder;
+    display: inline-block;
+    position: relative;
+    bottom: -10px;
+    text-align: center;
+    padding-left: 50px;
+    -webkit-transform: rotate(-3deg); 
+    -webkit-text-stroke: 0.01px black;
+    color: red; 
+    margin-left: -20px;
+    margin-right: 170px;
+}
+.iconos{
+    width: 20px;
+    display: inline-block;
+    position: relative;
+}
+.iconos:hover{
+    transform: scale(1.5)
+} 
+.seguinos{
+    display: inline-block;
+    position: relative;
+}
+.logo{
+    margin-left: 260px;
+    
+}
+
+.foto {
+    width: 90%;
+    height: 450px;
+    
+    padding-left: 100px;
+} 
+.card-group{
+    padding-bottom: 20px;
+}
+.fotoserv{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.boton {
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(187, 171, 171);
+}
+.navbar-light .navbar-toggler-icon{
+    background-color: white;
+}
+
+/* -------------------------- */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+/* --------------------------------- */
+
+
+
+
+/* fin estilo header */
+
+/* inicio estilos barra navegacion */
+
+.container-fluid{
+    background-color: black;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(255, 146, 204);
+    font-size: 1.2em;
+}
+.navbar-light .navbar-nav .nav-link-activo{
+    background-color: rgb(82, 72, 72);
+    font-size: 1.3em;
+    text-decoration: none;
+    color: rgb(255, 146, 204);
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link:focus{
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: rgb(236, 13, 217);
+}
+
+li{
+    padding-left: 100px;
+    padding-right: 30px;
+}
+
+/* fin estilo navegacion */
+
+
+/* estilos servicios */
+.card:hover{
+    transform: scale(1.01);
+    box-shadow: 2px 2px black;
+    font-weight: bold;
+}
+.card h5:hover{
+    color: crimson;
+}
+/* fin estilos servicios */
+
+/* inicio estilos contacto */
+
+.contacto {
+    width: 80%;
+    height: 50%;
+    margin: 0% auto 0 auto;
+}
+
+
+.name {
+    background-color: white;
+    color: black;
+    width: 300px;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(27, 25, 25);
+    font-size: 20px;
+}
+
+.name:hover {
+    background-color: #fad4d4;
+       
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px 5px rgba(78, 72, 77, 0.219);
+}
+
+.email {
+    background-color: white;
+    
+    height: 50px;
+    width: 300px;
+
+}
+
+.email:hover {
+    background-color: #dfdfdf;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px 5px rgba(78, 72, 77, 0.219);
+
+}
+
+.message {
+    background-color: white;
+    
+    overflow: hidden;
+    height: 100px;
+    width: 300px;
+}
+
+.message:hover {
+    background-color: #b6c0be;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px 5px rgba(78, 72, 77, 0.219); 
+}
+
+.entry {
+    display: block;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease 0s;
+    box-shadow: 0px 0px 25px 2px #AAA;
+}
+
+.submit {
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    color: white;
+    background-color: #78ccee;
+    border: none;
+    margin-top: 60px;
+    cursor: pointer;
+    
+}
+.submit:hover {
+    background-color: red;
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+}
+
+/* estilos nosotras */
+.fotopersona{
+    width: 30%;
+    float: left;}
+.fotoper{
+    width: 60%;
+    border-radius: 50%;
+    border-color: 2px 2px 2px black;
+    padding: 10px 10px ;
+    
+}
+.articulo{
+    width: 80%;
+
+    
+}
+h4{
+    font-family: 'Pinyon Script', cursive;
+    font-size: 30px;
+    padding-top: 20px;
+}
+.parrafo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+
+}
+
+
+/* fin estilos nosotras */
+
+
+
+/* estilos de footer */
+.footer{
+    /* display: inline-block; */
+    width: 100%;
+    height: 100%;
+    background-color: rgb(129, 119, 119);
+    color: white;
+    font-size: 20px;
+
+    text-align: left;
+}
+.disenado{
+    text-align: center;
+    font-size: 15px;
+}
+
+.logofoot{
+    width: 100%;
+}
+.h3foot1{
+    font-size: 1em;
+    text-align: right;
+}
+.h3foot2{
+    font-size: 1em;
+    text-align: center;
+}
+
+    
+
+.menufoot{
+    text-decoration: none;
+    font-size: 15px;
+    list-style: none;
+    color: white;
+}
+.menufoot2{
+    font-size: .5em;
+    list-style: none;
+}
+
+.footcontainer{
+    width: 90% auto;
+    display: flex;
+    /* justify-content: center; */
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.iconito {
+   
+    font-size: 30px;}
+
+
+
+
+/* fin footer */
+
+
+
+@media (max-width: 1080px) {
+    h1{
+        
+        text-align: center;
+        padding-left: 5px;
+    }
+    .logo{
+        margin-left: 50px;
+    }
+}
+
+
+@media (max-width: 830px) {
+
+    .logo {
+        margin-left: -10px;}
+
+}
+
+@media (max-width: 768px) {
+
+   h1{
+       font-size: 3em;
+   }
+   .mapa{
+    width: 0px;
+    height: 0px;
+}
+   .logofoot{
+       width: 0px;
+   }
+
+
+}
+
+@media (max-width: 604px) {
+    img.logo{
+        width: 80px;
+    }
+    .logo {
+        margin-left: 351px;
+    }
+    h1{
+        padding-left: 20px;
+        bottom: 60px;
+        margin-right: 0px;
+    }
+    .mapa{
+        width: 0px;
+        height: 0px;
+    }
+}
+
+/* -----------------estilos login------------------- */
+/* .containerOwnApp {
+    box-shadow: 0 0 27px 0 rgba(84, 84, 84, 0.62);
+    padding-top: 15px;
+ } */
+  
+ .login-page {
+   padding: 2% 0 0;
+   margin: 0 auto 20px;
+   max-width: 500px;
+   position: relative;
+ }
+  
+ .login-form {
+    box-shadow: 0 0 27px 0 rgba(84, 84, 84, 0.62);
+ }
+  
+ .login-form-header {
+    padding-top: 16px;
+ }
+  
+ .login-from-row {
+    padding-top: 16px;
+    padding-bottom: 16px;
+ }
+  
+
+

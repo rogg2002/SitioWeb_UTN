@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BettinaDepilacion</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="shortcut icon" href="images/LogoBD.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/estilos.css">
+</head>
+
+<body class="container-xxl">
+
+
+  <header>
+
+    <div class="cabecera">
+
+      <img class="logo" src="images/LogoBD.png" width="100px" alt="logo">
+      <h1>Bettina depilación</h1>
+      <div class="seguinos">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://api.whatsapp.com/send?phone=+541160066625&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+          class="float" target="_blank">
+          <i class="fa fa-whatsapp my-float"></i>
+        </a>
+        <p>seguinos en </p>
+      </div>
+      <div class="seguinos">
+        <a class="iconos" href="https://es-la.facebook.com/BettinaDepilacion" target="_blank">
+          <img src="images/facebook-square-brands.svg" alt="facebook">
+        </a>
+        <a class="iconos" href="https://www.instagram.com/bettinadepilacion/?hl=es" target="_blank">
+          <img src="images/instagram-brands.svg" alt="instagram">
+        </a>
+        <a class="iconos" href="" target="_blank">
+          <img src="images/twitter-square-brands.svg" alt="twuiter">
+        </a>
+      </div>
+
+
+
+    </div>
+
+    <!--<barra de navegacion-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#"></a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="{{#if isInicio}}nav-link-activo{{/if}}" style="color: pink;font-size: 1.2em;text-decoration: none;" aria-current="page" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="{{#if isServicios}}nav-link-activo{{/if}}" style="color: pink;font-size: 1.2em;text-decoration: none;" aria-current="page" href="servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="{{#if isNosotras}}nav-link-activo{{/if}}" style="color: pink;font-size: 1.2em;text-decoration: none;" aria-current="page" href="nosotros">Nosotras</a>
+            </li>
+            <li class="nav-item">
+              <a class="{{#if isSucursales}}nav-link-activo{{/if}}" style="color: pink;font-size: 1.2em;text-decoration: none;" aria-current="page" href="sucursales">Sucursales</a>
+            </li>
+            <li class="nav-item">
+              <a class="{{#if isContacto}}nav-link-activo{{/if}}" style="color: pink;font-size: 1.2em;text-decoration: none;" aria-current="page" href="contacto">Contacto</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--fin de barra navegacion-->
+    </header>
+    {{{body}}}
+  
+
+  <!-- inicio footer -->
+
+  <footer class="footer">
+
+    <!-- ------------------------------------- -->
+
+    <div class="footcontainer">
+      <div class="row">
+        <div class="logofoot">
+          <img class="logofoot" src="images/LogoBD.png">
+        </div>
+      </div>
+      <div class="cajafoot">
+        <h3 class="h3foot1">Mapa de Sitio</h3>
+        <ul id="menu-principal-2" class="mt-4">
+          <li class="menufoot">
+            <a href="/" aria-current="page" class="menufoot">Inicio</a>
+          </li>
+          <li class="menufoot"><a href="/servicios" class="menufoot">Servicios</a></li>
+          <li class="menufoot"><a href="/nosotros" class="menufoot">Nosotras</a></li>
+          <li class="menufoot"><a href="/sucursales" class="menufoot">Sucursales</a></li>
+          <li class="menufoot"><a href="/contacto" class="menufoot">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- contacto -->
+      <div class="row">
+        <h3 class="h3foot2">Contacto</h3>
+        <ul class="menufoot">
+          <li>Turnos al</li>
+          <li>+54 (11) 4784-2444</li>
+
+          <li>+54 (11) 6006-6625</li>
+          <li>Franklin D. Roosevelt 2490</li>
+          <li>Belgrano (CABA)</li>
+        </ul>
+        <ul class="menufoot2">
+          <li>
+            <a href="https://es-la.facebook.com/BettinaDepilacion" target="_blank" class="iconito"><i
+                class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/bettinadepilacion/?hl=es" target="_blank" class="iconito"><i
+                class="fa fa-instagram"></i></a>
+          </li>
+
+        </ul>
+      </div>
+      <!-- fin/contacto -->
+      <div class="row">
+        <iframe class="mapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.8219130647262!2d-58.46339688527439!3d-34.558064162589936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb42af5f9078b%3A0x7b641ffcdc5169c3!2sBettina%20DEPILACI%C3%93N!5e0!3m2!1ses!2sar!4v1623455155280!5m2!1ses!2sar"
+          width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <!-- --------------------------------------------- -->
+
+      <br><br><br><br>
+    </div>
+    </div>
+
+    <p class="disenado">Diseñado por &#169 Adrian Roggiero</p>
+  </footer>
+
+  <!-- fin de footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
