@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 11-08-2021 a las 14:03:17
+-- Tiempo de generación: 16-08-2021 a las 14:31:37
 -- Versión del servidor: 5.5.24-log
 -- Versión de PHP: 5.4.3
 
@@ -19,6 +19,28 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `tablabd`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `novedades`
+--
+
+CREATE TABLE IF NOT EXISTS `novedades` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(250) NOT NULL,
+  `subtitulo` text NOT NULL,
+  `cuerpo` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+
+--
+-- Volcado de datos para la tabla `novedades`
+--
+
+INSERT INTO `novedades` (`id`, `titulo`, `subtitulo`, `cuerpo`) VALUES
+(1, '¿QUÉ ES LA DEPILACIÓN ESPAÑOLA?', '¿Se puede utilizar en todas la partes del cuerpo?', 'La depilación española es uno de los métodos de depilación más efectivos que existen en la actualidad. En esta se utiliza una cera caliente hecha a base de resina de pino y miel, ingredientes que evitan que la piel se irrite y que se encargan de dejarla suave y brillante. No obstante, se recomienda aplicar alguna crema o emulsión sobre la zona depilada para obtener mejores resultados.'),
+(2, 'LIFTING DE PESTAÑAS', '¿Qué es y para qué sirve un lifting de pestañas?', 'El lifting de pestañas es uno de los tratamientos estéticos más demandados en la actualidad. Con un efecto duradero, asegura resultados y permite olvidar las molestas pestañas postizas. Este tratamiento da expresión a la mirada, especialmente en aquellas personas que acuden a las clínicas estéticas con unas pestañas cortas y con poca densidad.\r\n\r\n');
 
 -- --------------------------------------------------------
 
