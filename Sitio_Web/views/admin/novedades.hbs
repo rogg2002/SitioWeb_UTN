@@ -14,7 +14,7 @@
             <h2>Lista de Novedades</h2>
         </div>
         <div class="col-5 text-end">
-            <a href="" class="btn btn-success"><i class="fa fa-plus"></i> Nuevo</a>
+            <a href="/admin/novedades/agregar" class="btn btn-success"><i class="fa fa-plus"></i> Nuevo</a>
         </div>
 
     </div>
@@ -37,7 +37,7 @@
                         <th scope="row">{{id}}</th>
                         <td>{{titulo}}</td>
                         <td class="text-end">
-                            <a href="" class="btn btn-secondary"><i
+                            <a href="/admin/novedades/modificar/{{id}}" class="btn btn-secondary"><i
                             class="fas fa-pencil-alt"></i> Modificar</a>
                             <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-secondary"><i 
                             class="fas fa-trash"></i> Eliminar</a>

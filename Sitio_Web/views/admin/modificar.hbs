@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row text-center login-page">
+        <div class="col-md-12 login-form">
+            <h3>Modificar Novedades</h3>
+            <form action="/admin/novedades/modificar" method="post">
+            <input type="hidden" value="{{novedad.id}}" name="id">
+                <div class="row">
+                    <div class="col-md-12 login-form-header">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 login-from-row">
+                        <input name="titulo" type="text" placeholder="Titulo" style="width: 80%; text-align:center;" value="{{novedad.titulo}}"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 login-from-row">
+                        <textarea name="subtitulo" id="" cols="50" rows="5" placeholder="Subtitulo">{{novedad.subtitulo}}</textarea>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 login-from-row">
+                        <textarea name="cuerpo" id="" cols="50" rows="10" placeholder="Cuerpo">{{novedad.cuerpo}}</textarea>
+
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Modificar</button>
+            </form>
+            {{#if error}} 
+            <p>{{message}}</p>
+            {{/if}}
+            
+        </div>
+    </div>
+</div>
