@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 23-08-2021 a las 13:16:58
+-- Tiempo de generación: 31-08-2021 a las 12:40:21
 -- Versión del servidor: 5.5.24-log
 -- Versión de PHP: 5.4.3
 
@@ -23,6 +23,29 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `contacto`
+--
+
+CREATE TABLE IF NOT EXISTS `contacto` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(250) NOT NULL,
+  `email` varchar(250) NOT NULL,
+  `tel` varchar(250) NOT NULL,
+  `mensaje` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
+
+--
+-- Volcado de datos para la tabla `contacto`
+--
+
+INSERT INTO `contacto` (`id`, `nombre`, `email`, `tel`, `mensaje`) VALUES
+(1, 'Adrian', 'rogg2002@hotmail.com', '5050505050', 'Prueba de mensaje'),
+(9, 'Flavia', 'flavia@gmail.com', '233456789', 'Mensaje de prueba 2');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `novedades`
 --
 
@@ -32,7 +55,7 @@ CREATE TABLE IF NOT EXISTS `novedades` (
   `subtitulo` text NOT NULL,
   `cuerpo` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Volcado de datos para la tabla `novedades`

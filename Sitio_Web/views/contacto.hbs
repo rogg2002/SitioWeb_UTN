@@ -2,7 +2,7 @@
 <section>
     <div class="contacto">
         <div class="title" id="contacto">
-            <br>
+            {{!-- <br> --}}
             <h2>Envianos un mensaje</h2>
         </div>
 
@@ -14,6 +14,8 @@
 
                 <input type="text" class="email entry" name="email" placeholder="Email" required />
 
+                <input type="text" class="email entry" name="tel" placeholder="Teléfono"  />
+
                 <textarea class="message entry" name="mensaje" placeholder="mensaje" required></textarea>
 
                 <input type="submit" class="submit entry" value="Enviar" />
@@ -24,7 +26,7 @@
 
     {{#if message }}
 
-    <p>{{message}}</p>
+    <h2 style="text-align: center;">{{message}}</h2>
 
     {{/if}}
 

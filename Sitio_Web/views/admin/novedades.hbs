@@ -1,21 +1,39 @@
 <div class="container" style="margin-top: 10px ;margin-bottom: 100px ; ">
-    
+
     {{!-- -------Fila de login------- --}}
     <div class="row">
-        <p style="text-align: right;">Hola <span style="text-transform: uppercase;">{{usuario}}</span><a class="btn btn-danger"  href="/admin/login/logout">Cerrar sesión <i class="fas fa-sign-out-alt"></i></a></p>
-   
+        <p style="text-align: right;">Hola <span style="text-transform: uppercase;">{{usuario}}</span><a
+                class="btn btn-danger" href="/admin/login/logout">Cerrar sesión <i class="fas fa-sign-out-alt"></i></a>
+        </p>
+
     </div>
     {{!-- ----------Fin FIla Login-------}}
 
     {{!-- ----------inicio Listado novedades--------- --}}
 
     <div class="row">
-        <div class="col-7" style="margin-top:-9px;">
+        <div class="col-5" style="margin-top:-9px;">
             <h2>Lista de Novedades</h2>
         </div>
         <div class="col-5 text-end">
             <a href="/admin/novedades/agregar" class="btn btn-success"><i class="fa fa-plus"></i> Nuevo</a>
         </div>
+
+        {{!-- -----------------------Buscador---------------------------- --}}
+        <div class="col-2 text-right">
+            <form action="/admin/novedades" method="get">
+                <div class="d-flex">
+                    <input type="search" id="form1" class="form-control" placeholder="Buscar" aria-label="Search"
+                        name="q" {{#if q}} value="{{q}}" {{/if}} />
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+        {{!-- ------------------------------------------------------------ --}}
+
 
     </div>
 
@@ -38,9 +56,9 @@
                         <td>{{titulo}}</td>
                         <td class="text-end">
                             <a href="/admin/novedades/modificar/{{id}}" class="btn btn-secondary"><i
-                            class="fas fa-pencil-alt"></i> Modificar</a>
-                            <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-secondary"><i 
-                            class="fas fa-trash"></i> Eliminar</a>
+                                    class="fas fa-pencil-alt"></i> Modificar</a>
+                            <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-secondary"><i
+                                    class="fas fa-trash"></i> Eliminar</a>
                         </td>
 
                     </tr>
@@ -50,7 +68,13 @@
 
 
             </table>
-            
+
+            {{!-- ----si no se encuentra concordancia con la busqueda---- --}}
+            {{#if is_search}}
+            {{#unless novedades.length}}
+            No se encontro la busqueda para "<b>{{q}}</b>"
+            {{/unless}}
+            {{/if}}
         </div>
 
     </div>

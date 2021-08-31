@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
+var contactoModel = require('../models/contactoModel');
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -12,6 +14,7 @@ router.post('/', async(req, res, next) => {
 
   var nombre = req.body.nombre;
   var email = req.body.email;
+  var telefono = req.body.tel;
   var mensaje = req.body.mensaje;
 
   console.log(req.body);
@@ -19,7 +22,7 @@ router.post('/', async(req, res, next) => {
   var obj = {
     to: 'rogg2002@hotmail.com',
     subject: 'CONTACTO WEB',
-    html: nombre + " se ha contactado a travez de la web y quiere mas información a este correo : " + email + ". <br> Además, hizo este comentario : " + mensaje
+    html: nombre + " se ha contactado a travez de la web y quiere mas información a este correo : " + email + telefono + ". <br> Además, hizo este comentario : " + mensaje
 
   }
 
@@ -32,7 +35,8 @@ router.post('/', async(req, res, next) => {
     }
   });
 
-  var info = await transport.sendMail(obj);
+  var info = await transport.sendMail(obj);  //envia mensaje
+  var contacto = await contactoModel.insertContacto(req.body);  //inserta los contactos en la tabla
 
   res.render('contacto', {
       message: 'El mensaje se envió correctamente'
